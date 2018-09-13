@@ -1,2 +1,13 @@
-# moodle-starter-theme
-Moodle 3.5 Boost child theme with custom gulp build process: live reload, browsersync, scss processing, autoprefixer, linting, etc..
+# Starter Moodle Theme
+
+This theme is based on [Moodle Boost theme](https://docs.moodle.org/34/en/Boost_theme).
+It has been generated with cookiecutter base on the [Moodle Theme Template](https://github.com/liip-elearning/moodle-theme-template).
+
+## Development
+
+    npm install
+    gulp
+
+## Build
+
+    gulp build
