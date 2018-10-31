@@ -14,43 +14,28 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Starter theme post SCSS.
+ * Starter theme settings.
  *
  * @package    theme_starter
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-
-$border-radius: 12px;
-
-// Import FontAwesome.
-@import "../../boost/scss/fontawesome";
-
-// Import All of Bootstrap
-@import "../../boost/scss/bootstrap";
-
-// Import Core moodle CSS
-@import "../../boost/scss/moodle";
-
-$colortest: black;
-
 body {
-   // background: $colortest url('[[pix:theme|screenshot]]') repeat 0 0;
-   background-color: orange;
+  background: blue url('[[pix:theme|screenshot]]') repeat 0 0;
 }
 h1 {font-size: 5rem;}
 body {font-family: Arial, Cochin, Georgia, Times, 'Times New Roman', serif}
 
 
-
+$colortest: red;
 
 #frontpage-course-list {
-    h2 {
-        color: $link-color;
-    }
+  h2 {
+      color: $colortest;
+  }
 }
 
 
 h2 {
-    color: $colortest;
+  color: $colortest;
 }

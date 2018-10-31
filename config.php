@@ -73,3 +73,6 @@ $THEME->scss = function($theme) {
 
 // This is the function that postprocesses CSS (as string). It is specified to allow entirely wiping CSS when Gulp is in action.
 $THEME->csspostprocess = 'theme_starter_csspostprocess';
+
+// This allows Browsersync to inject the Sass while working on frontend.
+$CFG->devel_custom_additional_head = '<link rel="stylesheet" type="text/css" href="../theme/starter/build/stylesheets/compiled.css">';

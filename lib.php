@@ -124,12 +124,14 @@ function theme_starter_update_settings_images($settingname) {
  *
  * @param $style Input CSS
  */
-function theme_starter_csspostprocess($css) {
-    global $CFG;
 
-    if (debugging('', DEBUG_DEVELOPER) && strpos($CFG->devel_custom_additional_head, 'build/stylesheets/compiled.css') !== false) {
+
+//function theme_starter_csspostprocess($css) {
+//    global $CFG;
+
+//    if (debugging('', DEBUG_DEVELOPER) && strpos($CFG->devel_custom_additional_head, 'build/stylesheets/compiled.css') !== false) {
         // If we're designing the theme and we have an overlay for gulp, empty all CSS.
-        return "head.see-compiled-css-by-gulp { color: white; }";
-    }
-    return $css;
-}
+//        return "head.see-compiled-css-by-gulp { color: white; }";
+//    }
+//    return $css;
+//}

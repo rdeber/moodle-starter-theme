@@ -11,8 +11,10 @@ const pattern       = new RegExp(/\[\[([^:]*):([^\]]+)\]\](\?v=([\d\.]+))?/, 'g'
  */
 gulp.task('watch', ['build'], function() {
   browserSync.init({
-    proxy: 'starter.lo',
-    open: false,
+    proxy: "localhost:80",
+    port: 9000,
+    open: 'local',
+    injectChanges: true,
   });
 
   gulp.watch('templates/**/*.mustache', reload);
